@@ -65,7 +65,7 @@ Then('when login is successful {string} result should be listed on message page'
 end
 
 # Bai login invalid
-Given('login failed in the website') do 
+Given('login successful in the website') do 
     @driver = Selenium::WebDriver.for :chrome
     @driver.navigate.to('http://the-internet.herokuapp.com/login')
     @driver.manage.window.maximize
