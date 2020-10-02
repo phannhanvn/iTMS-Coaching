@@ -19,7 +19,7 @@ Feature: Automation test
   #@in-progress
   @regression
   Scenario Outline: login_invalid
-    Given login failed in the website
+    Given login successful in the website
     When user input invalid user is '<username>' 
     And invalid password is '<password>'
     Then when login is failed "Your username is invalid!" result should be listed on message page
